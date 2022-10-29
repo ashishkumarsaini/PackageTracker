@@ -1,11 +1,16 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import { ScrollView } from 'react-native';
+import ShippingMethods from '../../components/ShippingMethods/ShippingMethods';
+import HomeHeader from './partials/HomeHeader/HomeHeader';
+import PreviousShippment from './partials/PreviousShippment/PreviousShippment';
 
 const HomeContainer = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Home</Text>
-    </View>
+    <ScrollView>
+        <HomeHeader />
+        <PreviousShippment />
+        <ShippingMethods />
+    </ScrollView>
   );
 };
 
